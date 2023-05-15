@@ -1,12 +1,16 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import AppNav from "./Components/AppNav";
+import NotificationCart from "./pages/NotificationCart";
 
 function App() {
   return (
-    <>
-      <h1 className=" text-center text-purple-900 font-bold text-lg">
-        Home Page
-      </h1>
-    </>
+    <div className="h-screen flex justify-center items-center bg-purple-100">
+      <Routes>
+        <Route path="/" element={<AppNav />} />
+        <Route path="/navigation-cart" element={<NotificationCart />} />
+      </Routes>
+    </div>
   );
 }
 
