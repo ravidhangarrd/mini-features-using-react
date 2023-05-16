@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import AppNav from "./Components/AppNav";
 import NotificationCart from "./pages/NotificationCart";
+import ProfileCard from "./pages/ProfileCard";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AppNav />} />
         <Route path="/navigation-cart" element={<NotificationCart />} />
+        <Route path="/profile-card" element={<ProfileCard />} />
       </Routes>
     </div>
   );

@@ -10,8 +10,9 @@ const AppNav = () => {
             Mini Features Projects
           </p>
         </div>
-        <div className="w-full">
-          <NavItem>Notification Cart</NavItem>
+        <div className="w-full flex gap-3 flex-col">
+          <NavItem gotoPage="navigation-cart">Notification Cart</NavItem>
+          <NavItem gotoPage="profile-card">Profile Card</NavItem>
         </div>
       </nav>
     </>
